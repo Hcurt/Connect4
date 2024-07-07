@@ -3,6 +3,7 @@ package com.example.myapplication1;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         turnImage = findViewById(R.id.turnImage);
         winnerImage = findViewById(R.id.winnerImage);
         // Set the row and column count for the grid
-        gridLayout.setRowCount(6);
-        gridLayout.setColumnCount(7);
 
         Button resetButton = findViewById(R.id.resetButton);
         resetButton.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         setupGrid();
+
     }
 
     private void setupGrid() {
